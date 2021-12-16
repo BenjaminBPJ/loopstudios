@@ -38,10 +38,12 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 3rem;
+    align-items: center;
 }
 
 .logo{
-    margin-left: 6rem;
+    margin-left: 3rem;
+    height: 3rem;
 }
 
 .nav-header{
@@ -189,3 +191,30 @@ h1{
 }
 /* Fin Section creations */
 
+/* Footer */
+footer{
+    margin-top: 10rem;
+    background-color: black;
+    color: white;
+}
+
+.logo-emotes{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+}
+
+.nav-copyrights{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+}
+
+.li-about{
+    padding-left: 0;
+}
+
+.front-end-mentor{
+    text-align: center;
+}
+/* Fin Footer */
