@@ -64,4 +64,33 @@ h1{
     padding: 1.5rem;
     width: 55%;
 }
+/* Fin Header */
 
+/* Section Leader */
+.leader{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.image-interactive, .leader-div{
+    width: 40%;
+}
+
+.image-interactive{
+    z-index: 0;
+}
+
+.leader-div{
+    background-color: white;
+    margin-top: 7rem;
+    margin-left: -8rem;
+    padding: 4rem;
+    z-index: 10;
+}
+
+.leader-title{
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
