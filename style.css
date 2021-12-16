@@ -1,0 +1,67 @@
+/* parametres generaux */
+@font-face{
+    font-family: 'alata';
+    src:url('font/Alata-Regular.ttf');  
+}
+@font-face{
+    font-family: 'josephin';
+    src:url('font/JosefinSans-Regular.ttf');  
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, nav{
+    display: flex;
+    list-style: none;
+}
+
+body{
+    font-family: 'josephin';
+    width: 1440px;
+    margin: auto;
+}
+
+/* fin parametres generaux */
+
+/* Header */
+header{
+    color:white;
+    background-image: url(images/desktop/image-hero.jpg);
+    padding-bottom: 3rem;
+}
+
+.bannier{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.logo{
+    margin-left: 6rem;
+}
+
+.nav-header{
+    margin-right: 6rem;
+}
+
+.ul, li{
+    font-family: 'josephin';
+    cursor: pointer;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 5em;
+    font-weight: lighter;
+    border: white 1px solid;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+    padding: 1.5rem;
+    width: 55%;
+}
+
