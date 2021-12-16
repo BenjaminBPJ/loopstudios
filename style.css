@@ -1,4 +1,4 @@
-/* parametres generaux */
+/* Parametres generaux */
 @font-face{
     font-family: 'alata';
     src:url('font/Alata-Regular.ttf');  
@@ -25,10 +25,10 @@ body{
     margin: auto;
 }
 
-/* fin parametres generaux */
+/* Fin parametres generaux */
 
 /* Header */
-header{
+.main-header{
     color:white;
     background-image: url(images/desktop/image-hero.jpg);
     padding-bottom: 3rem;
@@ -64,17 +64,19 @@ h1{
     padding: 1.5rem;
     width: 55%;
 }
-/* Fin Header */
+/* Fin header */
 
-/* Section Leader */
+/* Section leader */
 .leader{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 8rem;
 }
 
 .image-interactive, .leader-div{
-    width: 40%;
+    width: 60%;
 }
 
 .image-interactive{
@@ -83,9 +85,9 @@ h1{
 
 .leader-div{
     background-color: white;
-    margin-top: 7rem;
-    margin-left: -8rem;
-    padding: 4rem;
+    margin-top: 10rem;
+    margin-left: -10rem;
+    padding: 5rem;
     z-index: 10;
 }
 
@@ -94,3 +96,96 @@ h1{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+/* Fin Section leader */
+
+/* Section creations */
+.creations-div{
+    width: 90%;
+    margin: auto;
+    margin-top: 8rem;
+}
+
+.creations-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.creations-title{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.see-all{
+    padding: 1rem 2rem;
+    border: black 1px solid;
+}
+
+.gallery{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}
+
+.gallery-article{
+    display: flex;
+    align-items: flex-end;
+    height: 450px;
+}
+
+.gallery-title{
+    color: white;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.deep{
+    background-image: url(images/desktop/image-deep-earth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.night{
+    background-image: url(images/desktop/image-night-arcade.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.soccer{
+    background-image: url(images/desktop/image-soccer-team.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid{
+    background-image: url(images/desktop/image-grid.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.from-above{
+    background-image: url(images/desktop/image-from-above.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pocket{
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.curiosity{
+    background-image: url(images/desktop/image-curiosity.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fisheye{
+    background-image: url(images/desktop/image-fisheye.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* Fin Section creations */
+
