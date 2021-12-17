@@ -120,6 +120,8 @@ h1{
 .see-all{
     padding: 1rem 2rem;
     border: black 1px solid;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .gallery{
@@ -130,64 +132,154 @@ h1{
 }
 
 .gallery-article{
+    cursor: pointer;
+    color: white;
     display: flex;
     align-items: flex-end;
     height: 450px;
+    transition: 0.3s ease-in-out;
 }
 
 .gallery-title{
-    color: white;
     font-weight: lighter;
     font-size: 2rem;
     padding: 2rem;
 }
 
 .deep{
+    position: relative;
+}
+
+.deep-article::before{
+    content: "";
     background-image: url(images/desktop/image-deep-earth.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .night{
+    position: relative;
+}
+
+.night-article::before{
+    content: "";
     background-image: url(images/desktop/image-night-arcade.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .soccer{
+    position: relative;
+}
+
+.soccer-article::before{
+    content: "";
     background-image: url(images/desktop/image-soccer-team.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .grid{
+    position: relative;
+}
+
+.grid-article::before{
+    content: "";
     background-image: url(images/desktop/image-grid.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .from-above{
+    position: relative;
+}
+
+.from-above-article::before{
+    content: "";
     background-image: url(images/desktop/image-from-above.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .pocket{
+    position: relative;
+}
+
+.pocket-article::before{
+    content: "";
     background-image: url(images/desktop/image-pocket-borealis.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .curiosity{
+    position: relative;
+}
+
+.curiosity-article::before{
+    content: "";
     background-image: url(images/desktop/image-curiosity.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .fisheye{
+    position: relative;
+}
+
+.fisheye-article::before{
+    content: "";
     background-image: url(images/desktop/image-fisheye.jpg);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
 }
 /* Fin Section creations */
 
@@ -204,6 +296,17 @@ footer{
     padding: 1.5rem 5%;
 }
 
+.emote-footer{
+    display: flex;
+    align-items: center;
+}
+
+.social-emote{
+    cursor: pointer;
+    padding: 0.7rem;
+    height: 50px;
+}
+
 .nav-copyrights{
     display: flex;
     justify-content: space-between;
@@ -218,3 +321,53 @@ footer{
     text-align: center;
 }
 /* Fin Footer */
+
+/* Animations */
+li::after{
+    display: block;
+    content: "";
+    height: 1px;
+    background: white;
+    transform: scale(0);
+    transition: 0.4s ease-in-out;
+}
+
+li:hover::after{
+    transform: scale(1);
+}
+
+.see-all:hover{
+    background-color: black;
+    color: white;
+}
+
+/*.gallery-article::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s ease-in-out;
+    opacity: 0.2;
+}*/
+
+.gallery-article:hover::before{
+    opacity: 0.3;
+}
+.gallery-article:hover{
+    color: black;
+}
+
+.social-emote::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: 0.4s ease-in-out;
+}
+
+.social-emote:hover::after{
+    width: 100%;
+} 
